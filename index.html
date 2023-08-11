@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mangal to Krutidev Converter</title>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Switching Text from Mangal to Krutidev (Kruti Dev): A Quick Guide</h2>
+        </header>
+        <section>
+            <ol>
+                <li><strong>Start Simple</strong>: Copy your Mangal content and pop it into the provided text box.</li>
+                <li>Next, just hit the "Convert To Krutidev Text" button.</li>
+                <li>You'll then see your text in the Krutidev box.</li>
+            </ol>
+            <p>That's it – you're all set!</p>
+        </section>
+        <section>
+            <h2>Mangal Text: </h2>
+            <textarea class="form-control" id="mangaltext" name="mangaltext" onchange="mangalkruti()" onkeyup="mangalkruti()" onpaste="mangalkruti()" placeholder="Enter Mangal Text" rows="4"></textarea>
+            <div class="btn-group">
+                <a class="btn btn-primary" href="javascript:mangalkruti();"><i aria-hidden="true" class="fa fa-retweet"></i> Convert To Krutidev</a>
+                <a class="btn btn-success" href="javascript:cleartext();"><i aria-hidden="true" class="fa fa-eraser"></i> Clear Text</a>
+            </div>
+        </section>
+        <section>
+            <h2>Krutidev Text:</h2>
+            <textarea class="form-control" id="krutitext" name="krutitext" placeholder="Converted Krutidev Text" rows="4"></textarea>
+            <div class="btn-group">
+                <a class="btn btn-success" href="javascript:sendtowhatsapp();" role="button"><i aria-hidden="true" class="fa fa-whatsapp"></i> Send to Whatsapp</a>
+                <a class="btn btn-primary" href="javascript:sendtomail();" role="button"><i aria-hidden="true" class="fa fa-envelope"></i> Send via Gmail</a>
+                <a class="btn btn-primary" href="javascript:exportHTML();" role="button"><i aria-hidden="true" class="fa fa-file-word-o"></i> Download Word File</a>
+                <a class="copy" href="javascript:copyclipboard();"><i aria-hidden="true" class="fa fa-clipboard"></i> Copy To Clipboard</a>
+            </div>
+        </section>
+        <section>
+            <p><strong>Please Note:</strong> The Converted Kruti Dev Text shown above will be seen as some random English characters. You need to copy the text and paste it into your word application such as Microsoft Office Word or WPS Office and Paste It. After That, You need to change the font of the pasted text to Kruti Dev 010. If you don't have Krutidev font, <a href="https://github.com/oathanrex/mangal-to-krutidev-converter/raw/main/font/Kruti_Dev_010.ttf">click here</a> to download the font.</p>
+        <footer>
+    <p>All rights reserved &copy; 2023 | Designed by <a href="https://oathanrex.blogspot.com/" target="_blank">Oathan Rex</a></p>
+</footer>
+    </div>
+<script src="https://cdn.statically.io/gh/oathanrex/mangal-to-krutidev-converter/main/js/mangalkruti.js"></script>
+    <script src="https://cdn.statically.io/gh/oathanrex/mangal-to-krutidev-converter/main/js/custom.js"></script>
+</body>
+</html>
